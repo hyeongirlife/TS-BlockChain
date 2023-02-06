@@ -1,0 +1,7 @@
+{
+  //!! 컴파일 하고 싶은 ts 파일의 모든 위치를 적자
+  "include": ["src"],
+  //!! outDir은 컴파일된 js 파일이 어디에 저장될지 적자
+  //!! target은 컴파일할 JS의 수준을 정함
+  "compilerOptions": { "outDir": "build", "target": "ES5" }
+}
