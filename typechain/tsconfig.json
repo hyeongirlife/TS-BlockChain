@@ -3,5 +3,13 @@
   "include": ["src"],
   //!! outDir은 컴파일된 js 파일이 어디에 저장될지 적자
   //!! target은 컴파일할 JS의 수준을 정함
-  "compilerOptions": { "outDir": "build", "target": "ES5" }
+  "compilerOptions": {
+    "outDir": "build",
+    "esModuleInterop": true,
+    "target": "ES5",
+    // !! dom은 브라우저 환경에서 코드를 실행시킴을 알 수 있다. 브라우저에서 사용 가능한 메소드들을 사용 가능하다.
+    "lib": ["ES6", "dom"],
+    "strict": true,
+    "module": "CommonJS"
+  }
 }
